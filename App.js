@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Button, StyleSheet, View, Text } from 'react-native'
-import { getHex } from 'react-native-pixel-color'
+import { getHex } from './mnist'
 import { SketchCanvas } from '@terrylinla/react-native-sketch-canvas'
 const modelJSON = require('./trained-model')
 const brain = require('brain.js')

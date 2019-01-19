@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -35,10 +36,11 @@
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* RN_MNISTTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RN_MNISTTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
+		38A6CE5B21F3971500F2174F /* MNISTPixels.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A6CE5A21F3971500F2174F /* MNISTPixels.m */; };
+		60A0FF43FFF3447EA19CF9C0 /* libRNPixelColor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C03F3F3B8B334867B9C077DA /* libRNPixelColor.a */; };
+		7E0697857939445D8DF25DB2 /* libRNSketchCanvas.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C75C351896D447293A4A16C /* libRNSketchCanvas.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
-		7E0697857939445D8DF25DB2 /* libRNSketchCanvas.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C75C351896D447293A4A16C /* libRNSketchCanvas.a */; };
-		60A0FF43FFF3447EA19CF9C0 /* libRNPixelColor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C03F3F3B8B334867B9C077DA /* libRNPixelColor.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -188,6 +190,20 @@
 			proxyType = 2;
 			remoteGlobalIDString = 9936F32F1F5F2E5B0010BF04;
 			remoteInfo = "privatedata-tvOS";
+		};
+		38A6CE5421F3963500F2174F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B074D69E8D0C4F1DA03339F8 /* RNPixelColor.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5D72D2E81C16249000E22EC1;
+			remoteInfo = RNPixelColor;
+		};
+		38A6CE5721F3963500F2174F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7D40378585A4BC186A5706E /* RNSketchCanvas.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DEFBA2581F322B6000A4545C;
+			remoteInfo = RNSketchCanvas;
 		};
 		3DAD3E831DF850E9000B6D8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -340,14 +356,16 @@
 		2D02E47B1E0B4A5D006451C7 /* RN_MNIST-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RN_MNIST-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* RN_MNIST-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RN_MNIST-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		38A6CE5921F3971500F2174F /* MNISTPixels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNISTPixels.h; sourceTree = "<group>"; };
+		38A6CE5A21F3971500F2174F /* MNISTPixels.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNISTPixels.m; sourceTree = "<group>"; };
+		3C75C351896D447293A4A16C /* libRNSketchCanvas.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNSketchCanvas.a; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
-		F7D40378585A4BC186A5706E /* RNSketchCanvas.xcodeproj */ = {isa = PBXFileReference; name = "RNSketchCanvas.xcodeproj"; path = "../node_modules/@terrylinla/react-native-sketch-canvas/ios/RNSketchCanvas/RNSketchCanvas.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
-		3C75C351896D447293A4A16C /* libRNSketchCanvas.a */ = {isa = PBXFileReference; name = "libRNSketchCanvas.a"; path = "libRNSketchCanvas.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
-		B074D69E8D0C4F1DA03339F8 /* RNPixelColor.xcodeproj */ = {isa = PBXFileReference; name = "RNPixelColor.xcodeproj"; path = "../node_modules/react-native-pixel-color/ios/RNPixelColor.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
-		C03F3F3B8B334867B9C077DA /* libRNPixelColor.a */ = {isa = PBXFileReference; name = "libRNPixelColor.a"; path = "libRNPixelColor.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		B074D69E8D0C4F1DA03339F8 /* RNPixelColor.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNPixelColor.xcodeproj; path = "../node_modules/react-native-pixel-color/ios/RNPixelColor.xcodeproj"; sourceTree = "<group>"; };
+		C03F3F3B8B334867B9C077DA /* libRNPixelColor.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNPixelColor.a; sourceTree = "<group>"; };
+		F7D40378585A4BC186A5706E /* RNSketchCanvas.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSketchCanvas.xcodeproj; path = "../node_modules/@terrylinla/react-native-sketch-canvas/ios/RNSketchCanvas/RNSketchCanvas.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -495,6 +513,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				38A6CE5921F3971500F2174F /* MNISTPixels.h */,
+				38A6CE5A21F3971500F2174F /* MNISTPixels.m */,
 			);
 			name = RN_MNIST;
 			sourceTree = "<group>";
@@ -528,6 +548,31 @@
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		38A6CE2921F3963000F2174F /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				3C75C351896D447293A4A16C /* libRNSketchCanvas.a */,
+				C03F3F3B8B334867B9C077DA /* libRNPixelColor.a */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		38A6CE4F21F3963500F2174F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38A6CE5821F3963500F2174F /* libRNSketchCanvas.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		38A6CE5121F3963500F2174F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38A6CE5521F3963500F2174F /* libRNPixelColor.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		5E91572E1DD0AC6500FF2AA8 /* Products */ = {
@@ -586,6 +631,7 @@
 				00E356EF1AD99517003FC87E /* RN_MNISTTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				38A6CE2921F3963000F2174F /* Recovered References */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -771,6 +817,14 @@
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
+				{
+					ProductGroup = 38A6CE5121F3963500F2174F /* Products */;
+					ProjectRef = B074D69E8D0C4F1DA03339F8 /* RNPixelColor.xcodeproj */;
+				},
+				{
+					ProductGroup = 38A6CE4F21F3963500F2174F /* Products */;
+					ProjectRef = F7D40378585A4BC186A5706E /* RNSketchCanvas.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -914,6 +968,20 @@
 			fileType = archive.ar;
 			path = "libprivatedata-tvOS.a";
 			remoteRef = 2DF0FFEC2056DD460020B375 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		38A6CE5521F3963500F2174F /* libRNPixelColor.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNPixelColor.a;
+			remoteRef = 38A6CE5421F3963500F2174F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		38A6CE5821F3963500F2174F /* libRNSketchCanvas.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNSketchCanvas.a;
+			remoteRef = 38A6CE5721F3963500F2174F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		3DAD3E841DF850E9000B6D8A /* libRCTImage-tvOS.a */ = {
@@ -1123,6 +1191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				38A6CE5B21F3971500F2174F /* MNISTPixels.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1180,9 +1249,19 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/@terrylinla/react-native-sketch-canvas/ios/RNSketchCanvas/**",
+					"$(SRCROOT)/../node_modules/react-native-pixel-color/ios/**",
+				);
 				INFOPLIST_FILE = RN_MNISTTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1190,16 +1269,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RN_MNIST.app/RN_MNIST";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../node_modules/@terrylinla/react-native-sketch-canvas/ios/RNSketchCanvas/**",
-					"$(SRCROOT)/../node_modules/react-native-pixel-color/ios/**",
-				);
 			};
 			name = Debug;
 		};
@@ -1208,9 +1277,19 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/@terrylinla/react-native-sketch-canvas/ios/RNSketchCanvas/**",
+					"$(SRCROOT)/../node_modules/react-native-pixel-color/ios/**",
+				);
 				INFOPLIST_FILE = RN_MNISTTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1218,16 +1297,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RN_MNIST.app/RN_MNIST";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../node_modules/@terrylinla/react-native-sketch-canvas/ios/RNSketchCanvas/**",
-					"$(SRCROOT)/../node_modules/react-native-pixel-color/ios/**",
-				);
 			};
 			name = Release;
 		};
@@ -1237,6 +1306,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/@terrylinla/react-native-sketch-canvas/ios/RNSketchCanvas/**",
+					"$(SRCROOT)/../node_modules/react-native-pixel-color/ios/**",
+				);
 				INFOPLIST_FILE = RN_MNIST/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1247,11 +1321,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = RN_MNIST;
 				VERSIONING_SYSTEM = "apple-generic";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../node_modules/@terrylinla/react-native-sketch-canvas/ios/RNSketchCanvas/**",
-					"$(SRCROOT)/../node_modules/react-native-pixel-color/ios/**",
-				);
 			};
 			name = Debug;
 		};
@@ -1260,6 +1329,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/@terrylinla/react-native-sketch-canvas/ios/RNSketchCanvas/**",
+					"$(SRCROOT)/../node_modules/react-native-pixel-color/ios/**",
+				);
 				INFOPLIST_FILE = RN_MNIST/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1270,11 +1344,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = RN_MNIST;
 				VERSIONING_SYSTEM = "apple-generic";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../node_modules/@terrylinla/react-native-sketch-canvas/ios/RNSketchCanvas/**",
-					"$(SRCROOT)/../node_modules/react-native-pixel-color/ios/**",
-				);
 			};
 			name = Release;
 		};
@@ -1290,8 +1359,18 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/@terrylinla/react-native-sketch-canvas/ios/RNSketchCanvas/**",
+					"$(SRCROOT)/../node_modules/react-native-pixel-color/ios/**",
+				);
 				INFOPLIST_FILE = "RN_MNIST-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1301,16 +1380,6 @@
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../node_modules/@terrylinla/react-native-sketch-canvas/ios/RNSketchCanvas/**",
-					"$(SRCROOT)/../node_modules/react-native-pixel-color/ios/**",
-				);
 			};
 			name = Debug;
 		};
@@ -1326,8 +1395,18 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/@terrylinla/react-native-sketch-canvas/ios/RNSketchCanvas/**",
+					"$(SRCROOT)/../node_modules/react-native-pixel-color/ios/**",
+				);
 				INFOPLIST_FILE = "RN_MNIST-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1337,16 +1416,6 @@
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../node_modules/@terrylinla/react-native-sketch-canvas/ios/RNSketchCanvas/**",
-					"$(SRCROOT)/../node_modules/react-native-pixel-color/ios/**",
-				);
 			};
 			name = Release;
 		};
@@ -1361,8 +1430,18 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/@terrylinla/react-native-sketch-canvas/ios/RNSketchCanvas/**",
+					"$(SRCROOT)/../node_modules/react-native-pixel-color/ios/**",
+				);
 				INFOPLIST_FILE = "RN_MNIST-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1372,16 +1451,6 @@
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RN_MNIST-tvOS.app/RN_MNIST-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../node_modules/@terrylinla/react-native-sketch-canvas/ios/RNSketchCanvas/**",
-					"$(SRCROOT)/../node_modules/react-native-pixel-color/ios/**",
-				);
 			};
 			name = Debug;
 		};
@@ -1396,8 +1465,18 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/@terrylinla/react-native-sketch-canvas/ios/RNSketchCanvas/**",
+					"$(SRCROOT)/../node_modules/react-native-pixel-color/ios/**",
+				);
 				INFOPLIST_FILE = "RN_MNIST-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1407,16 +1486,6 @@
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RN_MNIST-tvOS.app/RN_MNIST-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../node_modules/@terrylinla/react-native-sketch-canvas/ios/RNSketchCanvas/**",
-					"$(SRCROOT)/../node_modules/react-native-pixel-color/ios/**",
-				);
 			};
 			name = Release;
 		};
