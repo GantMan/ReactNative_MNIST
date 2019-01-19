@@ -137,6 +137,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-pixel-color')
     compile project(':@terrylinla_react-native-sketch-canvas')
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"

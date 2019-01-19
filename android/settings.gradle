@@ -1,4 +1,6 @@
 rootProject.name = 'RN_MNIST'
+include ':react-native-pixel-color'
+project(':react-native-pixel-color').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-pixel-color/android')
 include ':@terrylinla_react-native-sketch-canvas'
 project(':@terrylinla_react-native-sketch-canvas').projectDir = new File(rootProject.projectDir, '../node_modules/@terrylinla/react-native-sketch-canvas/android')
 
