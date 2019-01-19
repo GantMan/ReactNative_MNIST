@@ -19,6 +19,6 @@ who's source helped speed this project along.  Also, this would have been insane
 [Terry](https://github.com/terrylinla), the [react-native-sketch-canvas](https://github.com/terrylinla/react-native-sketch-canvas).
 
 Read more about MLP MNIST by Ralph [here](https://golb.hplar.ch/2019/01/machine-learning-with-brain-and-tensorflow-js.html).  
-The MNIST dataset was created in 1999 by Lecun, read more [here](http://yann.lecun.com/exdb/mnist/)
+The MNIST dataset was published in 1999 by Lecun, read more [here](http://yann.lecun.com/exdb/mnist/)
 
 As always, thanks to [Infinite Red](https://infinite.red/), for a supportive community while I work on adancing Machine Learning.
