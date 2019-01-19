@@ -1,12 +1,17 @@
 # ReactNative_MNIST
 **IN ENGLISH:** JavaScript mobile number figure-outer
 
-**ML:** React Native implementation of the MNIST prediction model in BrainJS via MLP (non conv)
+**ML:** React Native implementation of the MNIST data trained in a BrainJS MLP (non conv) predictive model.
 
 
 
 ![MNIST](./_art/mnist_brain.gif)
 
+
+### Notes:
+Due to a DOM dependency this project uses patch-package to modify Brain.js.  This will automatically remove `stream` which is not polyfilled in React Native.   The benefit?  This project works out the box, no need to edit `node_modules`.
+
+Additionally, there doesn't seem to be a way to get pixel data of images in React Native, so some native Objective C is included in this project.  If requested, I'll create an Android version + node module of the `getPixels` function to complete cross-platform capabilities.
 
 ### Thanks
 Special thanks to [Robert Plummer](https://github.com/robertleeplummerjr) and [Ralph Schaer](https://github.com/ralscha)
