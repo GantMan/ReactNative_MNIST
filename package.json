@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@terrylinla/react-native-sketch-canvas": "^0.8.0",
@@ -16,6 +17,8 @@
     "babel-jest": "23.6.0",
     "jest": "23.6.0",
     "metro-react-native-babel-preset": "0.51.1",
+    "patch-package": "^5.1.2",
+    "postinstall-postinstall": "^2.0.0",
     "react-test-renderer": "16.6.3"
   },
   "jest": {

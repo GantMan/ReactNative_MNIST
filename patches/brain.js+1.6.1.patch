@@ -1,0 +1,22 @@
+patch-package
+--- a/node_modules/brain.js/dist/train-stream.js
++++ b/node_modules/brain.js/dist/train-stream.js
+@@ -6,8 +6,6 @@ Object.defineProperty(exports, "__esModule", {
+ 
+ var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+ 
+-var _stream = require('stream');
+-
+ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+ 
+ function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+@@ -162,7 +160,7 @@ var TrainStream = function (_Writable) {
+   }]);
+ 
+   return TrainStream;
+-}(_stream.Writable);
++};
+ 
+ exports.default = TrainStream;
+ //# sourceMappingURL=train-stream.js.map
+\ No newline at end of file
