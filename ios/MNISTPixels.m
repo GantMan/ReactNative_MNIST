@@ -9,11 +9,10 @@
 
 RCT_EXPORT_MODULE();
 
-RCT_EXPORT_METHOD(getHex:(NSString *)path
-                  options:(NSDictionary *)options
+RCT_EXPORT_METHOD(getPixels:(NSString *)path
                   callback:(RCTResponseSenderBlock)callback)
 {
-  
+
   [_bridge.imageLoader loadImageWithURLRequest:[RCTConvert NSURLRequest:path] callback:^(NSError *error, UIImage *image) {
     if (error || image == nil) { // if couldn't load from bridge create a new UIImage
       if ([path hasPrefix:@"data:"] || [path hasPrefix:@"file:"]) {
@@ -22,22 +21,22 @@ RCT_EXPORT_METHOD(getHex:(NSString *)path
       } else {
         image = [[UIImage alloc] initWithContentsOfFile:path];
       }
-      
+
       if (image == nil) {
         callback(@[@"Could not create image from given path.", @""]);
         return;
       }
     }
-    
-    
+
+
     UIGraphicsBeginImageContextWithOptions(CGSizeMake(29, 29), YES, 0.0);
     [image drawInRect:CGRectMake(0, 0, 29, 29)];
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     // RCTLogInfo(@"Image width an height %f at %f", newImage.size.width, newImage.size.height);
-    
+
     NSMutableArray *myArray = [NSMutableArray array];
-    
+
     for(int i = 1; i <= 28; i++) {
       for(int j = 1; j <= 28; j++) {
         CGPoint point = CGPointMake(j, i);
@@ -53,7 +52,7 @@ RCT_EXPORT_METHOD(getHex:(NSString *)path
       }
     }
     callback(@[[NSNull null], myArray]);
-    
+
   }];
 }
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Button, StyleSheet, View, Text, Image } from 'react-native'
-import { getHex } from './mnist'
+import { getPixels } from './mnist'
 import { SketchCanvas } from '@terrylinla/react-native-sketch-canvas'
 const modelJSON = require('./trained-model')
 const brain = require('brain.js')
@@ -31,7 +31,7 @@ export default class example extends Component {
     this.canvas.getBase64('jpg', false, true, false, false, (err, result) => {
       const resultImage = `data:image/jpg;base64,${result}`
       this.setState({ drawnImage: resultImage })
-      getHex(resultImage)
+      getPixels(resultImage)
         .then(values => {
           // console.log(values)
           const detection = net.run(values)
@@ -44,6 +44,22 @@ export default class example extends Component {
   clear = () => {
     this.canvas.clear()
     this.setState({ detectedDigit: null, drawnImage: 'data:image/jpg;base64,' })
+  }
+
+  printResults = () => {
+    return (
+      <View>
+        <View style={styles.rows}>
+          <Text>28x28 version the computer sees =</Text>
+          <Image
+            style={styles.previewImage}
+            source={{ uri: this.state.drawnImage }}
+          />
+        </View>
+        <Text style={styles.resultSentence}>{`Drawing detected number`}</Text>
+        <Text style={styles.resultNumber}>{`${this.state.detectedDigit}`}</Text>
+      </View>
+    )
   }
 
   render() {
@@ -60,23 +76,11 @@ export default class example extends Component {
               borderWidth: 1
             }}
             strokeColor={'#FF0000'}
-            strokeWidth={50}
+            strokeWidth={28}
             onStrokeEnd={this.grabPixels}
           />
           <Button title="Clear" onPress={this.clear} />
-          <View style={styles.rows}>
-            <Text>28x28 version the computer sees =</Text>
-            <Image
-              style={styles.previewImage}
-              source={{ uri: this.state.drawnImage }}
-            />
-          </View>
-          <Text style={styles.resultSentence}>
-            {this.state.detectedDigit && `Drawing detected number`}
-          </Text>
-          <Text style={styles.resultNumber}>
-            {this.state.detectedDigit && `${this.state.detectedDigit}`}
-          </Text>
+          {this.state.detectedDigit && this.printResults()}
         </View>
       </View>
     )

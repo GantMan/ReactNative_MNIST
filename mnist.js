@@ -1,15 +1,14 @@
-import {
-  NativeModules,
-} from 'react-native';
+import { NativeModules } from 'react-native'
 
-export const getHex = (path, options) => new Promise((resolve, reject) => {
-  NativeModules.MNISTPixels.getHex(path, options, (err, color) => {
-    if (err) return reject(err);
+export const getPixels = path =>
+  new Promise((resolve, reject) => {
+    NativeModules.MNISTPixels.getPixels(path, (err, color) => {
+      if (err) return reject(err)
 
-    resolve(color);
-  });
-});
+      resolve(color)
+    })
+  })
 
 export default {
-  getHex,
+  getPixels
 }
