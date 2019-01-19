@@ -8,6 +8,9 @@ let net = new brain.NeuralNetwork()
 net.fromJSON(modelJSON)
 
 export default class example extends Component {
+  state={
+    detectedDigit: null
+  }
   maxScore(obj) {
     let maxKey = 0;
     let maxValue = 0;
@@ -25,14 +28,20 @@ export default class example extends Component {
 
   grabPixels = () => {
     this.canvas.getBase64('jpg', false, true, false, false, (err, result) => {
-      getHex(`data:image/jpg;base64,${result}`, { x: 0, y: 1 })
+      getHex(`data:image/jpg;base64,${result}`)
         .then(color => {
-          console.log(color)
+          // console.log(color)
           const detection = net.run(color);
-          alert(this.maxScore(detection));
+          this.setState({detectedDigit: this.maxScore(detection)})
+          // alert(this.maxScore(detection));
         })
         .catch(console.error)
     })
+  }
+
+  clear = () => {
+    this.canvas.clear()
+    this.setState({detectedDigit: null})
   }
 
   render() {
@@ -52,7 +61,10 @@ export default class example extends Component {
             strokeWidth={50}
             onStrokeEnd={this.grabPixels}
           />
-          <Button title="Clear" onPress={() => this.canvas.clear()} />
+          <Button title="Clear" onPress={this.clear} />
+          <Text>
+            {this.state.detectedDigit && `Drawing detected as ${this.state.detectedDigit}`}
+          </Text>
         </View>
       </View>
     )

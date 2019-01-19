@@ -37,6 +37,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* RN_MNISTTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RN_MNISTTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		38A6CE5B21F3971500F2174F /* MNISTPixels.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A6CE5A21F3971500F2174F /* MNISTPixels.m */; };
+		38A6CE6C21F39C0800F2174F /* UIImage+ColorAtPixel.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A6CE6B21F39C0800F2174F /* UIImage+ColorAtPixel.m */; };
 		60A0FF43FFF3447EA19CF9C0 /* libRNPixelColor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C03F3F3B8B334867B9C077DA /* libRNPixelColor.a */; };
 		7E0697857939445D8DF25DB2 /* libRNSketchCanvas.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C75C351896D447293A4A16C /* libRNSketchCanvas.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
@@ -358,6 +359,8 @@
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		38A6CE5921F3971500F2174F /* MNISTPixels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNISTPixels.h; sourceTree = "<group>"; };
 		38A6CE5A21F3971500F2174F /* MNISTPixels.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNISTPixels.m; sourceTree = "<group>"; };
+		38A6CE6A21F39C0800F2174F /* UIImage+ColorAtPixel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorAtPixel.h"; sourceTree = "<group>"; };
+		38A6CE6B21F39C0800F2174F /* UIImage+ColorAtPixel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorAtPixel.m"; sourceTree = "<group>"; };
 		3C75C351896D447293A4A16C /* libRNSketchCanvas.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNSketchCanvas.a; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
@@ -514,6 +517,8 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				38A6CE5921F3971500F2174F /* MNISTPixels.h */,
+				38A6CE6A21F39C0800F2174F /* UIImage+ColorAtPixel.h */,
+				38A6CE6B21F39C0800F2174F /* UIImage+ColorAtPixel.m */,
 				38A6CE5A21F3971500F2174F /* MNISTPixels.m */,
 			);
 			name = RN_MNIST;
@@ -1193,6 +1198,7 @@
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				38A6CE5B21F3971500F2174F /* MNISTPixels.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				38A6CE6C21F39C0800F2174F /* UIImage+ColorAtPixel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
